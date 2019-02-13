@@ -37,10 +37,12 @@ export default class Player extends Component {
 
     updateDuration(){
         const {setProps} = this.props;
-        const duration = this.refs.player.getDuration();
+        if (this.refs.player !== null){
+            const duration = this.refs.player.getDuration();
 
-        if (setProps !== null){
-            setProps({duration: duration});
+            if (setProps !== null){
+                setProps({duration: duration});
+            }
         }
     }
 

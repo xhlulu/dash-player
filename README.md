@@ -1,4 +1,4 @@
-Dash Player: Control and play videos using Dash
+# Dash Player: Control and play videos using Dash
 
 ![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
 [![GitHub stars](https://img.shields.io/github/stars/xhlulu/dash-player.svg)](https://github.com/xhlulu/dash-player/stargazers)
@@ -41,7 +41,7 @@ Once that done, you can copy the `dash_player` package in the folder of your app
 
 Prop | Description | Default
 ---- | ----------- | -------
-`id` | The ID used to identify this compnent in Dash callbacks |
+`id` | The ID used to identify this component in Dash callbacks |
 `url` | The url of a video or song to play<br/>&nbsp; ◦ &nbsp;Can be an [array](#multiple-sources-and-tracks) or [`MediaStream`](https://developer.mozilla.org/en-US/docs/Web/API/MediaStream) object
 `playing` | Set to `true` or `false` to pause or play the media | `false`
 `loop` | Set to `true` or `false` to loop the media | `false`
@@ -55,7 +55,7 @@ Prop | Description | Default
 `currentTime` | Returns the number of seconds that have been played
 `secondsLoaded` | Returns the number of seconds that have been loaded
 `duration` | Returns the duration (in seconds) of the currently playing media
-`intervalCurrentTime`| Interval in milliseconds at which currenTtime prop is updated. | `40`
+`intervalCurrentTime`| Interval in milliseconds at which currentTime prop is updated. | `100`
 `intervalSecondsLoaded` | Interval in milliseconds at which secondsLoaded prop is updated. | `500`
 `intervalDuration` | Interval in milliseconds at which duration prop is updated. | `500`
 `seekTo` | Seek to the given number of seconds, or fraction if amount is between 0 and 1 | `null`
